@@ -1,0 +1,61 @@
+/* init */
+* {
+    box-sizing: border-box;
+}
+
+/* SET size = 200px*/
+input:not([type="radio"]):not([type="submit"]):not([type="checkbox"]),
+textarea,
+select {
+    width: 200px;
+}
+
+/* SET background color*/
+body {
+    background: #213b50;
+    padding   : 25px;
+}
+
+input,
+textarea,
+select {
+    background: #2b4a64;
+}
+
+/* font color */
+body,
+input,
+textarea,
+select {
+    color       : #ffffff;
+    border-style: none;
+}
+
+/* FOCUS input */
+input:focus:not([type="radio"]):not([type="checkbox"]),
+textarea:focus {
+    background: #4e708c;
+    outline   : 1px ridge #ffffff;
+}
+
+/* BUTTON  bg*/
+input[type="submit"] {
+    text-transform: uppercase;
+    background    : #1ac056;
+}
+
+/* BUTTON  geometry*/
+input[type="submit"] {
+    margin-top: 25px;
+    padding   : 15px 25px;
+}
+
+/* BUTTON hover */
+input[type="submit"]:hover {
+    background: #46e881;
+}
+
+/* padding */
+label {
+    line-height: 1.7rem;
+}
