@@ -23,7 +23,7 @@
 }
 
 .animate-width {
-    transition: all 1s linear;
+    transition: width 1s linear;
 }
 
 .animate-width:hover {
@@ -33,9 +33,18 @@
 
 
 .animate-height {
-    transition: all 1s linear;
+    transition: height 1s linear;
 }
 
 .animate-height:hover {
+    height: 300px;
+}
+
+.animate-width-height {
+    transition: height 1s linear, width 1s linear;
+}
+
+.animate-width-height:hover {
+    width : 300px;
     height: 300px;
 }
