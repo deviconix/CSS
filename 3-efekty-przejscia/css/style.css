@@ -4,8 +4,10 @@
     margin-top  : 20px;
     margin-left : auto;
     margin-right: auto;
+}
 
-    transition: all 1s linear;
+.box:hover {
+    cursor: pointer;
 }
 
 .red {
@@ -20,8 +22,18 @@
     background-color: green;
 }
 
+.animate-width {
+    transition: all 1s linear;
+}
+
 .animate-width:hover {
     width: 300px;
+}
+
+
+
+.animate-height {
+    transition: all 1s linear;
 }
 
 .animate-height:hover {
