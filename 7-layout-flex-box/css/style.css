@@ -14,18 +14,69 @@ body {
 }
 
 
-main,
-aside {
-    flex: 1;
+header {
+    flex  : 0;
+    order : 1;
+    height: fit-content;
 }
 
-/* const */
-
-header,
 footer {
-    flex: 0 auto;
+    flex  : 0;
+    order : 5;
+    height: fit-content;
 }
 
+main {
+    flex : 1;
+    order: 2;
+}
+
+.aside-left {
+    flex : 1;
+    order: 3;
+}
+
+.aside-right {
+    flex : 1;
+    order: 4;
+}
+
+
+
+/* media query */
+@media only screen and (min-width: 768px) {
+
+    /* Ваш стиль здесь */
+    body {
+        flex-direction: row;
+        flex-wrap     : wrap;
+        align-content : space-between;
+
+    }
+
+    header,
+    footer {
+        flex  : 0 0 100%;
+        height: fit-content;
+    }
+
+    main {
+        flex : 1 75%;
+        order: 2;
+    }
+
+    .aside-left {
+        flex : 1 100%;
+        order: 4;
+    }
+
+    .aside-right {
+        flex : 1 25%;
+        order: 3;
+    }
+}
+
+/* const*/
 p {
     text-align    : center;
     text-transform: uppercase;
@@ -42,11 +93,11 @@ p {
 }
 
 .cyan {
-    background-color: cyan;
+    background-color: darkcyan;
 }
 
 .pink {
-    background-color: pink;
+    background-color: rosybrown;
 }
 
 .purple {
