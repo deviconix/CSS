@@ -1,0 +1,54 @@
+html,
+body {
+    height: 100%;
+}
+
+
+body {
+    display       : flex;
+    flex-direction: column;
+    box-sizing    : border-box;
+    padding       : 0;
+    margin        : 0;
+    align-items   : stretch;
+}
+
+
+main,
+aside {
+    flex: 1;
+}
+
+/* const */
+
+header,
+footer {
+    flex: 0 auto;
+}
+
+p {
+    text-align    : center;
+    text-transform: uppercase;
+    color         : white;
+    font-weight   : 900;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.green {
+    background-color: green;
+}
+
+.cyan {
+    background-color: cyan;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.purple {
+    background-color: purple;
+}
