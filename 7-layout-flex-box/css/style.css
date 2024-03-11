@@ -11,8 +11,6 @@ body {
     box-sizing    : border-box;
     padding       : 0;
     margin        : 0;
-    align-items   : stretch;
-    border        : 1px solid black;
 }
 
 
@@ -40,22 +38,23 @@ footer {
 
 main {
     flex : 1;
-    order: 2;
+    order: 1;
 }
 
 .aside-left {
     flex : 1;
-    order: 3;
+    order: 2;
 }
 
 .aside-right {
     flex : 1;
-    order: 4;
+    order: 3;
 }
 
 
 
 /* media query */
+/* tablet */
 @media only screen and (min-width: 768px) {
 
     .wrap {
@@ -65,18 +64,43 @@ main {
 
     main {
         flex : 1 75%;
-        order: 2;
+        order: 1;
     }
 
     .aside-left {
         flex : 1 100%;
-        order: 4;
+        order: 3;
     }
 
     .aside-right {
         flex : 1 25%;
-        order: 3;
+        order: 2;
     }
+}
+
+/* descktop */
+
+@media only screen and (min-width: 992px) {
+    .wrap {
+        flex-direction: row;
+        flex-wrap     : nowrap;
+    }
+
+    main {
+        order: 2;
+        flex : 1 60%;
+    }
+
+    .aside-left {
+        order: 1;
+        flex : 1 20%;
+    }
+
+    .aside-right {
+        order: 3;
+        flex : 1 20%;
+    }
+
 }
 
 /* const*/
