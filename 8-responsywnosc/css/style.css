@@ -42,3 +42,19 @@ figure img {
         width: 80%;
     }
 }
+
+@media only screen and (min-width: 768px) {
+    #gallery {
+        width         : 80%;
+        flex-direction: row;
+        flex-wrap     : wrap;
+    }
+
+    header {
+        flex: 0 100%;
+    }
+
+    figure {
+        flex: 50%;
+    }
+}
