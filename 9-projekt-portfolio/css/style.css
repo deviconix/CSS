@@ -37,6 +37,7 @@ section {
     border         : 1px solid #007bff;
     padding        : 14px 20px;
     transition     : all .3s;
+    display        : inline-block;
 
 }
 
@@ -116,4 +117,20 @@ section {
     color           : #007bff;
     background-color: #fff;
 
+}
+
+/*About section styles*/
+.about {
+    text-align: center;
+}
+
+.about .about-image {
+    border-radius: 50%;
+}
+
+.about p {
+    max-width  : 700px;
+    margin     : 40px auto 30px auto;
+    color      : #777;
+    line-height: 1.4;
 }
