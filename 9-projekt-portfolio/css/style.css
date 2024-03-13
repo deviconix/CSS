@@ -31,13 +31,16 @@ section {
 }
 
 .btn {
-    text-decoration: none;
-    text-transform : uppercase;
-    color          : #333;
-    border         : 1px solid #007bff;
-    padding        : 14px 20px;
-    transition     : all .3s;
-    display        : inline-block;
+    text-decoration : none;
+    text-transform  : uppercase;
+    color           : #333;
+    border          : 1px solid #007bff;
+    padding         : 14px 20px;
+    transition      : all .3s;
+    display         : inline-block;
+    margin          : auto;
+    background-color: transparent;
+    cursor          : pointer;
 
 }
 
@@ -179,4 +182,29 @@ section {
 
 .portfolio-wrapper .portfolio-item h3:hover {
     opacity: 1;
+}
+
+/* Contact section styles*/
+
+.contact form {
+    max-width      : 700px;
+    margin         : 40px auto 30px auto;
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-between;
+}
+
+
+.contact input[type="text"],
+.contact input[type="email"] {
+    flex-basis   : 48%;
+    padding      : 15px;
+    margin-bottom: 15px;
+}
+
+.contact textarea {
+    flex-basis   : 100%;
+    padding      : 15px;
+    margin-bottom: 15px;
+    height       : 100px;
 }
