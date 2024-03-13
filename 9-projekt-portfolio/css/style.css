@@ -208,3 +208,22 @@ section {
     margin-bottom: 15px;
     height       : 100px;
 }
+
+.social-links {
+    max-resolution: 75px;
+    text-align    : center;
+}
+
+.social-links .social-link {
+    font-size : 2.5em;
+    color     : #007bff;
+    transition: all .3s;
+    display   : inline-block;
+    margin    : 0 20px;
+
+
+}
+
+.social-links .social-link:hover {
+    color: #777;
+}
