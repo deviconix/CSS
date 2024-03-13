@@ -210,8 +210,8 @@ section {
 }
 
 .social-links {
-    max-resolution: 75px;
-    text-align    : center;
+    margin-top: 75px;
+    text-align: center;
 }
 
 .social-links .social-link {
